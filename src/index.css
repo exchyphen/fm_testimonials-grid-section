@@ -6,6 +6,8 @@
   --white: hsl(0, 0%, 100%);
   --light-gray: hsl(0, 0%, 81%);
   --light-grayish-blue: hsl(210, 46%, 95%);
+  --accent-violet: hsl(264, 83%, 70%);
+  --med-gray: hsl(213, 6%, 68%);
 }
 
 *, *::before, *::after {
@@ -15,6 +17,11 @@
 
 html {
   box-sizing: border-box;
+
+  /* font */
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
 }
 
 body {
@@ -22,6 +29,10 @@ body {
   min-height: 100svh;
 
   background: var(--light-grayish-blue);
+
+  display: flex;
+  justify-content: center;
+  align-items: center
 }
 
 #root {
